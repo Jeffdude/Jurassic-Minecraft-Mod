@@ -2,7 +2,8 @@ package jmm;
 
 
 import jmm.block.BlockTestingBlock;
-import jmm.core.CommonProxy;
+import jmm.common.CommonProxy;
+import jmm.gui.GuiHandler;
 import jmm.lib.Reference;
 import jmm.network.PacketHandler;
 import net.minecraft.block.Block;
@@ -15,6 +16,7 @@ import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.Mod.PostInit;
 import cpw.mods.fml.common.Mod.PreInit;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -38,7 +40,9 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class JurassicMinecraftMod {
     
     @Instance
-    public static JurassicMinecraftMod instance; 
+    public static JurassicMinecraftMod instance;
+    
+    @SidedProxy(clientSide="jmm.client.ClientProxy", serverSide="jmm.common.CommonProxy")
     public static CommonProxy proxy;
     
     public static Block testingBlock;
@@ -66,6 +70,7 @@ public class JurassicMinecraftMod {
     @Init
     public void init(FMLInitializationEvent event) {
         NetworkRegistry.instance().registerGuiHandler(this, proxy);
+        NetworkRegistry.instance().registerGuiHandler(instance, new GuiHandler());
     }
     
     @PostInit

@@ -1,6 +1,6 @@
-package jmm.core;
+package jmm.common;
 
-import jmm.inventory.ContainerTestingBlock;
+import jmm.gui.inventory.ContainerTestingBlock;
 import jmm.lib.GuiIds;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
