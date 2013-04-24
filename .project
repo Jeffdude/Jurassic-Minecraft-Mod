@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Jurassic-Minecraft-Mod</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>jmm_common</name>
+			<type>2</type>
+			<locationURI>JMM_SOURCE_LOCATION</locationURI>
+		</link>
+		<link>
+			<name>jmm_resources</name>
+			<type>2</type>
+			<locationURI>JMM_RESOURCES_LOCATION</locationURI>
+		</link>
+	</linkedResources>
+	<variableList>
+		<variable>
+			<name>JMM_RESOURCES_LOCATION</name>
+			<value>file:/Users/jeffmilling/Documents/Minecraft%20Mod%20Info/Sources/Jurassic-Minecraft-Mod/jmm_resources</value>
+		</variable>
+		<variable>
+			<name>JMM_SOURCE_LOCATION</name>
+			<value>file:/Users/jeffmilling/Documents/Minecraft%20Mod%20Info/Sources/Jurassic-Minecraft-Mod/jmm_common</value>
+		</variable>
+	</variableList>
+</projectDescription>
