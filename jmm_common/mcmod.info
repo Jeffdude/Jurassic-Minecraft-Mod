@@ -1,0 +1,21 @@
+[
+{
+  "modid": "JMM",
+  "name": "Jurassic Minecraft Mod",
+  "description": "Alpha Alpha Alpha Beta Beta Beta",
+  "version": "0.0.1",
+  "mcversion": "1.5.1",
+  "url": "",
+  "updateUrl": "",
+  "authors": [
+    "jeffdude"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
