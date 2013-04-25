@@ -34,3 +34,7 @@ bin/mcmod.info
 bin/mods/JMM/textures/blocks/TestingBlock.png
 
 bin/mods/JMM/textures/gui/GuiTestingBlock.png
+
+bin/jmm/gui/inventory/ContainerTesting.class
+
+*.class

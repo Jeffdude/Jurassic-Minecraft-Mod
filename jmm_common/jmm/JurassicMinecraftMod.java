@@ -57,7 +57,7 @@ public class JurassicMinecraftMod {
     public void preInit(FMLPreInitializationEvent event) {
         instance = this;
         
-        testingBlock = new BlockTestingBlock(500, Material.rock).setUnlocalizedName("Testing Block");
+        testingBlock = new BlockTestingBlock(500).setUnlocalizedName("Testing Block");
         
         GameRegistry.registerBlock(testingBlock, Reference.MOD_ID + testingBlock.getUnlocalizedName2());
         LanguageRegistry.addName(testingBlock, "Testing Block");
@@ -69,7 +69,6 @@ public class JurassicMinecraftMod {
     
     @Init
     public void init(FMLInitializationEvent event) {
-        NetworkRegistry.instance().registerGuiHandler(this, proxy);
         NetworkRegistry.instance().registerGuiHandler(instance, new GuiHandler());
     }
     

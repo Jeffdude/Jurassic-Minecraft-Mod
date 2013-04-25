@@ -1,6 +1,6 @@
 package jmm.common;
 
-import jmm.gui.inventory.ContainerTestingBlock;
+import jmm.gui.inventory.ContainerTesting;
 import jmm.lib.GuiIds;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
@@ -13,7 +13,7 @@ public class CommonProxy implements IGuiHandler {
             int x, int y, int z) {
         switch(ID) {
             case GuiIds.TESTING_BLOCK: {
-                return new ContainerTestingBlock(player.inventory, world, x, y, z);
+                return new ContainerTesting(player.inventory, world, x, y, z);
             }
         }
         return null;
@@ -24,7 +24,7 @@ public class CommonProxy implements IGuiHandler {
             int x, int y, int z) {
         switch(ID) {
             case GuiIds.TESTING_BLOCK: {
-                return new ContainerTestingBlock(player.inventory, world, x, y, z);
+                return new ContainerTesting(player.inventory, world, x, y, z);
             }
         }
         return null;
